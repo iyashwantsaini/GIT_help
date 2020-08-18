@@ -91,10 +91,40 @@ Date:   Tue Aug 18 19:06:00 2020 +0530
 
 ## git checkout
 
-- to go to a previous version of our code
+- to go to a previous version of our code.
+- get "_commit_id" from "git log"
 
 ```
 > git checkout _commit_id
 
+> git checkout 1598d06b5bfaf85f79281e3bc063c0ba5e3e0917
+Note: switching to '1598d06b5bfaf85f79281e3bc063c0ba5e3e0917'.
 
+You are in 'detached HEAD' state. You can look around, make experimental 
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.      
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 1598d06 four_added
+```
+
+- to get back to lastest version.
+
+```
+> git checkout master
+
+Previous HEAD position was 1598d06 four_added
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
 ```
