@@ -54,3 +54,7 @@ Changes to be committed:
 ```
 git commit -m "commit_short_name"
 ```
+
+## git branch
+
+- to get current working branch
