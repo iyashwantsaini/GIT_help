@@ -290,4 +290,6 @@ OR (all steps in one)
 ```
 > git stash
 
+Saved working directory and index state WIP on master: cc696f3 18_added
 ```
+
