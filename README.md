@@ -72,6 +72,8 @@ Changes to be committed:
 
 - to get info on previous commits
 - last commit is the HEAD in our branch
+- press UP/DOWN to see all.
+- press "q" to quit.
 
 ```
 > git log
@@ -127,4 +129,14 @@ Previous HEAD position was 1598d06 four_added
 Switched to branch 'master'
 Your branch is ahead of 'origin/master' by 1 commit.
   (use "git push" to publish your local commits)
+```
+
+## git reset
+
+- to delete previous commit(s).
+- get the ID of the commit just before the commit you wanna delete.
+- all the commits after that commit will be deleted.
+
+```
+git reset --head _commit_id (of the commit just before the commit you wanna delete)
 ```
