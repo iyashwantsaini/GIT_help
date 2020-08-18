@@ -347,7 +347,7 @@ stash@{0}: WIP on master: cc696f3 18_added
 > git commit -m "all_merged" (this commit will have all the previous commits merged)
 ```
 
-## git merge/rebase
+## git merge
 
 - Suppose we have 2 branches "one" and "two"
 - "one" has commits o1,o2
