@@ -5,7 +5,7 @@
 - To initialize a repository with git.
 
 ```
->git init
+> git init
 ```
 
 ## git status
@@ -235,4 +235,43 @@ Date:   Tue Aug 18 21:00:33 2020 +0530
 Resolve and commit again in the current branch.
 ```
 
+## git remote
 
+- to establish a connection between our local and remote repository.
+
+```
+> git remote add origin https://github.com/meyash/GIT_help.git
+
+> git remote
+
+origin
+
+> git remote -v
+
+origin  https://github.com/meyash/GIT_help.git (fetch)
+origin  https://github.com/meyash/GIT_help.git (push) 
+```
+
+## git push
+
+- to upload code from our local to remote repository.
+- "U" establishes an upstream for our connectoin.
+
+```
+git push -U origin master
+```
+
+## git pull
+
+- to get changes made in the remote repo.
+
+```
+> git fetch
+> git checkout master
+> git merge origin/master
+
+OR (all steps in one)
+
+> git pull
+
+```
