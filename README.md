@@ -58,16 +58,6 @@ Changes to be committed:
  1 file changed, 4 insertions(+)
 ```
 
-## git branch
-
-- to get name of current working branch
-
-```
-> git branch
-
-* master
-```
-
 ## git log
 
 - to get info on previous commits
@@ -131,6 +121,12 @@ Your branch is ahead of 'origin/master' by 1 commit.
   (use "git push" to publish your local commits)
 ```
 
+- revert/delete all unstaged changes.
+
+```
+> git checkout -- .
+```
+
 ## git reset
 
 - to delete previous commit(s).
@@ -174,3 +170,34 @@ Author: meyash <yashsn2127@gmail.com>
 Date:   Tue Aug 18 19:36:58 2020 +0530
 
 ```
+
+## git branch
+
+- to get name of current working branch
+
+```
+> git branch
+
+* master
+```
+
+- adding a new branch
+- any commits to new branch stays in that branch only.
+
+```
+> git checkout -b branch_name
+
+> git branch
+
+* branch_name
+  master
+```
+
+- merging two branches
+
+```
+```
+
+
+
+
