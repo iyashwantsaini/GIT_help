@@ -284,12 +284,26 @@ OR (all steps in one)
 
 ## git stash
 
-- to save your current code as draft and jump to previous commit.
+- to save your current code as draft and jump to last commit.
 - use stash in this case instead of using commit.
 
 ```
 > git stash
 
 Saved working directory and index state WIP on master: cc696f3 18_added
+```
+
+- to apply draft to current branch
+
+```
+> git stash apply
+```
+
+- to view all drafts
+
+```
+> git stash list
+
+stash@{0}: WIP on master: cc696f3 18_added
 ```
 
