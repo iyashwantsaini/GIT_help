@@ -32,21 +32,22 @@ Untracked files:
 ```
 
 - to add all files to tracking logic.
+
 ```
 > git add .
 
 > git status
 
 On branch master
-Your branch is up to date with 'origin/master'.    
+Your branch is up to date with 'origin/master'.
 
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
-        new file:   README.md 
+        new file:   README.md
         new file:   index.html
 ```
 
-## git commit 
+## git commit
 
 - to add currently tracked files to version of the code that we wanna save.
 - "-m" : to give our commit a name
@@ -54,7 +55,7 @@ Changes to be committed:
 ```
 > git commit -m "commit_short_name"
 
-[master 1598d06] commit_short_name   
+[master 1598d06] commit_short_name
  1 file changed, 4 insertions(+)
 ```
 
@@ -84,7 +85,7 @@ Date:   Tue Aug 18 19:06:00 2020 +0530
 ## git checkout
 
 - to go to a previous version of our code.
-- get "_commit_id" from "git log"
+- get "\_commit_id" from "git log"
 
 ```
 > git checkout _commit_id
@@ -92,9 +93,9 @@ Date:   Tue Aug 18 19:06:00 2020 +0530
 > git checkout 1598d06b5bfaf85f79281e3bc063c0ba5e3e0917
 Note: switching to '1598d06b5bfaf85f79281e3bc063c0ba5e3e0917'.
 
-You are in 'detached HEAD' state. You can look around, make experimental 
+You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
-state without impacting any branches by switching back to a branch.      
+state without impacting any branches by switching back to a branch.
 
 If you want to create a new branch to retain commits you create, you may
 do so (now or later) by using -c with the switch command. Example:
@@ -221,7 +222,7 @@ Date:   Tue Aug 18 21:00:33 2020 +0530
 12_added is now head of both master and branch_name.
 ```
 
-- deleting  the new branch (like after merging)
+- deleting the new branch (like after merging)
 
 ```
 > git branch -D branch_name
@@ -249,7 +250,7 @@ origin
 > git remote -v
 
 origin  https://github.com/meyash/GIT_help.git (fetch)
-origin  https://github.com/meyash/GIT_help.git (push) 
+origin  https://github.com/meyash/GIT_help.git (push)
 ```
 
 - to remove remote repo
@@ -293,7 +294,7 @@ OR (all steps in one)
 Saved working directory and index state WIP on master: cc696f3 18_added
 ```
 
-- to apply draft to current branch
+- to apply last draft to current branch
 
 ```
 > git stash apply
@@ -307,3 +308,32 @@ Saved working directory and index state WIP on master: cc696f3 18_added
 stash@{0}: WIP on master: cc696f3 18_added
 ```
 
+- to apply a particular draft to our current branch.
+
+```
+> git stash apply 0 (index of the stash we wanna apply)
+```
+
+- to save a description with the stash (for easy navigation)
+
+```
+> git stash push -m "_description_here"
+```
+
+- to delete a stash
+
+```
+> git stash drop 2 (index of stash you wanna remove)
+```
+
+- to apply stash to current branch and delete it from stash list
+
+```
+> git stash pop 2 (index)
+```
+
+- delete all stashes
+
+```
+> git stash clear
+```
