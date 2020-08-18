@@ -281,3 +281,13 @@ OR (all steps in one)
 > git pull
 
 ```
+
+## git stash
+
+- to save your current code as draft and jump to previous commit.
+- use stash in this case instead of using commit.
+
+```
+> git stash
+
+```
