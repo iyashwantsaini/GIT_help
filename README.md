@@ -221,6 +221,11 @@ Date:   Tue Aug 18 21:00:33 2020 +0530
 12_added is now head of both master and branch_name.
 ```
 
+- deleting  the new branch (like after merging)
+
+```
+> git branch -D branch_name
+```
 
 
 
