@@ -338,6 +338,21 @@ stash@{0}: WIP on master: cc696f3 18_added
 > git stash clear
 ```
 
+## git merge
+
+- Suppose we have 2 branches "one" and "two"
+- "one" has commits o1,o2
+- "two" has commits t1,t2,t3
+- we wanna merge t3 with o2
+- such that "one" now has o1,o2,t3(having t2,t1 merged within) commits
+
+```
+> git checkout one
+> git merge two (but this will merge all commits of "two" in "one")
+```
+
+- so we'll use squash here.
+
 ## git squash
 
 - to merge all the commits of the current branch in 1 last commit.
@@ -347,20 +362,16 @@ stash@{0}: WIP on master: cc696f3 18_added
 > git commit -m "all_merged" (this commit will have all the previous commits merged)
 ```
 
-## git merge
+## git rebase
 
 - Suppose we have 2 branches "one" and "two"
-- "one" has commits o1,o2
+- "one" has commits o1,o2,o3,o4
 - "two" has commits t1,t2,t3
-- we wanna merge t3 with o2
-- such that "one" now has o1,o2,t3 commits
+- we wanna get o4 as the base of two
+- such that "two" now has o4,t1,t2,t3 commits
 
 ```
-> git checkout one
-> git merge two (but this will merge all commits of "two" in "one")
+> git checkout two
+> git rebase master
+> git log (to check)
 ```
-
-- so we'll use rebase here
-
-
-
