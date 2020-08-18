@@ -227,5 +227,12 @@ Date:   Tue Aug 18 21:00:33 2020 +0530
 > git branch -D branch_name
 ```
 
+- Merging when two branches have different changes at same place.
+- This is called a conflict.
+- You can keep current commit, keep incoming (from the other branch), or keep both.
+
+```
+Resolve and commit again in the current branch.
+```
 
 
