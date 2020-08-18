@@ -82,12 +82,6 @@ Date:   Tue Aug 18 19:21:13 2020 +0530
 
     four_added
 
-commit 7facbe1715c6c5acd8e42526864da63b5e24aad2
-Author: meyash <mail@gmail.com>
-Date:   Tue Aug 18 19:20:26 2020 +0530
-
-    four_added
-
 commit 8ac3233f402d1cd5f0bd58a0546245428ccfd3e8 (origin/master, origin/HEAD)
 Author: Yashwant <mail@gmail.com>
 Date:   Tue Aug 18 19:06:00 2020 +0530
@@ -95,3 +89,12 @@ Date:   Tue Aug 18 19:06:00 2020 +0530
     Initial commit
 ```
 
+## git checkout
+
+- to go to a previous version of our code
+
+```
+> git checkout _commit_id
+
+
+```
