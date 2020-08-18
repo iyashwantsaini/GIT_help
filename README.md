@@ -193,9 +193,32 @@ Date:   Tue Aug 18 19:36:58 2020 +0530
   master
 ```
 
-- merging two branches
+- merging two branches (after commiting in new branch)
 
 ```
+> git checkout master
+
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+> git merge branch_name
+
+Updating f4d8e6d..faa43be
+Fast-forward
+ README.md                                          | 49 +++++++++++++++++-----
+ et --hard 2e316e281b8419e7d3857f261a83fd3782f3f743 | 41 ------------------
+ 2 files changed, 38 insertions(+), 52 deletions(-)
+ delete mode 100644 et --hard 2e316e281b8419e7d3857f261a83fd3782f3f743
+
+> git log
+
+commit faa43be813b477570101afc677d82538b954a0b5 (HEAD -> master, branch_name)
+Author: meyash <yashsn2127@gmail.com>
+Date:   Tue Aug 18 21:00:33 2020 +0530
+
+    12_added
+
+12_added is now head of both master and branch_name.
 ```
 
 
