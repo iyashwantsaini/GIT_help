@@ -138,5 +138,39 @@ Your branch is ahead of 'origin/master' by 1 commit.
 - all the commits after that commit will be deleted.
 
 ```
-git reset --head _commit_id (of the commit just before the commit you wanna delete)
+> git log
+
+commit 840ac517754709a6505ba5358b90c2c186adfe26 (HEAD -> master, origin/master, origin/HEAD)
+Author: meyash <yashsn2127@gmail.com>
+Date:   Tue Aug 18 20:28:28 2020 +0530
+
+    ten_added
+
+commit 2e316e281b8419e7d3857f261a83fd3782f3f743
+Author: meyash <yashsn2127@gmail.com>
+Date:   Tue Aug 18 19:43:06 2020 +0530
+
+    nine_added
+
+commit 30fc8d60617f67d23d9e15f4c7ceb7818875978f
+Author: meyash <yashsn2127@gmail.com>
+Date:   Tue Aug 18 19:36:58 2020 +0530
+
+    eight_added
+
+> git reset --head _commit_id (of the commit just before the commit you wanna delete)
+> git reset --head 2e316e281b8419e7d3857f261a83fd3782f3f743 (nine_added)
+
+> git log (now nine_added will be the head)
+
+commit 2e316e281b8419e7d3857f261a83fd3782f3f743 (HEAD -> master, origin/master, origin/HEAD)
+Author: meyash <yashsn2127@gmail.com>
+Date:   Tue Aug 18 19:43:06 2020 +0530
+
+    nine_added
+
+commit 30fc8d60617f67d23d9e15f4c7ceb7818875978f
+Author: meyash <yashsn2127@gmail.com>
+Date:   Tue Aug 18 19:36:58 2020 +0530
+
 ```
