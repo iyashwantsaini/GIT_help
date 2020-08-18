@@ -338,4 +338,29 @@ stash@{0}: WIP on master: cc696f3 18_added
 > git stash clear
 ```
 
+## git squash
+
+- to merge all the commits of the current branch in 1 last commit.
+
+```
+> git merge --squash _branch_name 
+> git commit -m "all_merged" (this commit will have all the previous commits merged)
+```
+
+## git merge/rebase
+
+- Suppose we have 2 branches "one" and "two"
+- "one" has commits o1,o2
+- "two" has commits t1,t2,t3
+- we wanna merge t3 with o2
+- such that "one" now has o1,o2,t3 commits
+
+```
+> git checkout one
+> git merge two (but this will merge all commits of "two" in "one")
+```
+
+- so we'll use rebase here
+
+
 
