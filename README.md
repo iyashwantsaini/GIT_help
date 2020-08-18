@@ -252,6 +252,12 @@ origin  https://github.com/meyash/GIT_help.git (fetch)
 origin  https://github.com/meyash/GIT_help.git (push) 
 ```
 
+- to remove remote repo
+
+```
+> git remote rm origin
+```
+
 ## git push
 
 - to upload code from our local to remote repository.
